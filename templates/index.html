@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Adaptive Exam Prep</title>
-  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" href="../static/css/shivansh.css">
 </head>
 <body>
   <h1>📘 Adaptive Exam Prep System</h1>
@@ -12,13 +12,13 @@
     <label>Student Name:</label>
     <input type="text" name="name" required><br><br>
 
-    <label>Select Subjects:</label><br>
-<input type="checkbox" name="subjects" value="Math"> Math<br>
-<input type="checkbox" name="subjects" value="Physics"> Physics<br>
-<input type="checkbox" name="subjects" value="Chemistry"> Chemistry<br>
-<input type="checkbox" name="subjects" value="Biology"> Biology<br>
-<input type="checkbox" name="subjects" value="English"> English<br>
-<input type="checkbox" name="subjects" value="Computer"> Computer<br><br>
+    <div id="nattu"><label >Select Subjects:</label></div><br>
+<input type="checkbox" name="subjects" value="Math"><label class="bpbp"> Math</label><br>
+<input type="checkbox" name="subjects" value="Physics"> <label class="bpbp">Physics</label><br>
+<input type="checkbox" name="subjects" value="Chemistry"> <label class="bpbp">Chemistry</label><br>
+<input type="checkbox" name="subjects" value="Biology"> <label class="bpbp">Biology</label><br>
+<input type="checkbox" name="subjects" value="English"> <label class="bpbp">English</label><br>
+<input type="checkbox" name="subjects" value="Computer"> <label class="bpbp">Computer</label><br><br>
 
 <script>
 const checkboxes = document.querySelectorAll('input[name="subjects"]'); // plural
@@ -36,27 +36,27 @@ checkboxes.forEach(cb => {
 
   
 
-    <label>Weak Subject:</label>
-    <select name="weak" required>
+    <div id="jatayu"><label>Weak Subject:</label>
+    <select name="weak" class="big-dropdown" required>
       <option value="Math">Math</option>
       <option value="Physics">Physics</option>
       <option value="Chemistry">Chemistry</option>
       <option value="Biology">Biology</option>
       <option value="English">English</option>
       <option value="Computer">Computer</option>
-    </select><br>
+    </select><br></div>
 
     <label>Confidence Level:</label>
-    <select name="confidence">
+    <select class="big-dropdown " name="confidence">
       <option value="high">High</option>
       <option value="medium">Medium</option>
       <option value="low">Low</option>
     </select><br><br>
 
-    <label>Study Hours Available per Day:</label>
-    <input type="number" name="time" required><br><br>
+    <div id="bromo"><label id="jp">Study Hours Available<br> per Day:</label>
+    <input type="number" name="time" required></div><br>
 
-    <button type="submit">Generate My Plan</button>
+    <div id="sugriv"><button type="submit">Generate My Plan</button></div>
   </form>
 </body>
 </html>

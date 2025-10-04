@@ -1,0 +1,107 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #eef1ff;
+  text-align: center;
+  color: #222;
+  padding: 30px;
+}
+
+form {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+label{
+    font-size: 25px;
+}
+#nattu{
+    margin-bottom: 15px;
+}
+input {
+  width: 300px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+input[type="checkbox"] {
+  transform: scale(1.8);
+  vertical-align: middle;
+  margin-right: 8px;
+  margin: 7px;
+}
+.big-dropdown {
+  width: 300px;
+  height: 45px;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+#jatayu{
+    margin-bottom: 18px;
+}
+option{
+    font-size: larger;
+}
+
+#bromo{
+    display: flex;
+}
+#jp{
+    padding-right: 5px;
+}
+
+button {
+  background-color: #4A6CF7;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 23px;
+}
+
+button:hover {
+  background-color: #3758e1;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background-color: #4A6CF7;
+  color: white;
+}
+
+a {
+  color: #4A6CF7;
+  text-decoration: none;
+}
+
+ul {
+  text-align: left;
+  display: inline-block;
+  margin-top: 20px;
+}
+#sugriv {
+    text-align: center;
+    margin: 30px;
+}
+.bpbp{
+    font-weight: lighter;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
