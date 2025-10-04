@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Adaptive Exam Prep</title>
-  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
   <h1>📘 Adaptive Exam Prep System</h1>
@@ -13,15 +13,38 @@
     <input type="text" name="name" required><br><br>
 
     <label>Select Subjects:</label><br>
-    <input type="checkbox" name="subjects" value="Math"> Math<br>
-    <input type="checkbox" name="subjects" value="Physics"> Physics<br>
-    <input type="checkbox" name="subjects" value="Chemistry"> Chemistry<br>
-    <input type="checkbox" name="subjects" value="Biology"> Biology<br>
-    <input type="checkbox" name="subjects" value="English"> English<br>
-    <input type="checkbox" name="subjects" value="Computer"> Computer<br><br>
+<input type="checkbox" name="subjects" value="Math"> Math<br>
+<input type="checkbox" name="subjects" value="Physics"> Physics<br>
+<input type="checkbox" name="subjects" value="Chemistry"> Chemistry<br>
+<input type="checkbox" name="subjects" value="Biology"> Biology<br>
+<input type="checkbox" name="subjects" value="English"> English<br>
+<input type="checkbox" name="subjects" value="Computer"> Computer<br><br>
+
+<script>
+const checkboxes = document.querySelectorAll('input[name="subjects"]'); // plural
+checkboxes.forEach(cb => {
+  cb.addEventListener('change', () => {
+    const checked = document.querySelectorAll('input[name="subjects"]:checked'); // plural
+    if (checked.length > 3) {
+      cb.checked = false; // uncheck last one
+      alert("You can select only 3 subjects.");
+    }
+  });
+});
+</script>
+
+
+  
 
     <label>Weak Subject:</label>
-    <input type="text" name="weak" required><br><br>
+    <select name="weak" required>
+      <option value="Math">Math</option>
+      <option value="Physics">Physics</option>
+      <option value="Chemistry">Chemistry</option>
+      <option value="Biology">Biology</option>
+      <option value="English">English</option>
+      <option value="Computer">Computer</option>
+    </select><br>
 
     <label>Confidence Level:</label>
     <select name="confidence">
