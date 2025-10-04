@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Adaptive Plan</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <h1>Hi {{ name }} 👋</h1>
+  <h2>Your Personalized Study Schedule</h2>
+
+  <table>
+    <tr>
+      <th>Time Slot</th>
+      <th>Subject</th>
+      <th>Duration</th>
+      <th>Quiz Link</th>
+      <th>Class Link</th>
+    </tr>
+    {% for entry in timetable %}
+      <tr>
+        <td>{{ entry.slot }}</td>
+        <td>{{ entry.subject }}</td>
+        <td>{{ entry.duration }}</td>
+        <td><a href="{{ entry.quiz }}" target="_blank">Quiz</a></td>
+        <td><a href="{{ entry.class }}" target="_blank">Class</a></td>
+      </tr>
+    {% endfor %}
+  </table>
+
+  <h3>Adaptive Recommendations:</h3>
+  <ul>
+    {% for msg in adaptive_message %}
+      <li>{{ msg }}</li>
+    {% endfor %}
+  </ul>
+
+  <a href="/">⬅ Back to Home</a>
+</body>
+</html>
+
